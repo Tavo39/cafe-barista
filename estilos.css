@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --color-primario: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: var(--dark-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Hero */
+.container-hero {
+    background-color: var(--background-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer-support, .container-logo, .container-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.customer-support i, .container-logo i, .container-user i {
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+.container-navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+    display: none;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.btn-search {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primario);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Secciones */
+.section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-primario);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: var(--color-primario);
+}
