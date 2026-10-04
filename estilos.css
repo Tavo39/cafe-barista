@@ -134,3 +134,10 @@ body {
     font-weight: bold;
     color: var(--color-primario);
 }
+
+.promo-card {
+    background-color: var(--background-color);
+    border-left: 5px solid var(--color-primario);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
